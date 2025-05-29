@@ -1,35 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minha Loja de Cosméticos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
 
-        <div class="caixa">
-            <h1><img src="logo.png"></h1>
-
-            <nav>
-
-                <ul>
-                    <li><a href="index.html">Lançamentos</a></li>
-                    <li><a href="">Maquiagem</a></li>
-                    <li><a href="">Skin care</a></li>
-                    <li><a href="">Cabelo</a></li>
-                    <li><a href="">Cuidados Corporais</a></li>
-                    <li><a href="">Perfumes</a></li>
-                    <li><a href="">Pincéis</a></li>
-                    <li><a href="">COLLABS</a></li>
-                    <li><a href="">Presentes</a></li>
-                </ul>
-
-            </nav>
-
+    <header class="header">
+        <div class="header-left">
+            <img src="logo.png" alt="Logo bevollat" class="logo">
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar">
+            <button class="search-button" aria-label="Pesquisar">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="header-icons">
+            <a href="#" aria-label="Minha conta"><i class="far fa-user"></i></a>
+            <a href="#" aria-label="Meus favoritos"><i class="far fa-heart"></i></a>
+            <a href="#" aria-label="Meu carrinho"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#" aria-label="Localização"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
     </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">LANÇAMENTOS</a></li>
+            <li><a href="#">MAQUIAGEM</a></li>
+            <li><a href="#">SKIN CARE</a></li>
+            <li><a href="#">CABELO</a></li>
+            <li><a href="#">CUIDADOS CORPORAIS</a></li>
+            <li><a href="#">PERFUMES</a></li>
+            <li><a href="#">PINCÉIS</a></li>
+            <li><a href="#">COLLABS</a></li>
+            <li><a href="#">PRESENTES</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+        <aside class="sidebar-filters">
+            <div class="filter-group">
+                <label for="skin-care-filter">SKIN CARE</label>
+                <select id="skin-care-filter">
+                    <option value="">Selecione</option>
+                    <option value="hidratante">Hidratante</option>
+                    <option value="protetor-solar">Protetor Solar</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="brand-filter">MARCA</label>
+                <select id="brand-filter">
+                    <option value="">Selecione</option>
+                    <option value="marca-a">Marca A</option>
+                    <option value="marca-b">Marca B</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-filter">PREÇO</label>
+                <select id="price-filter">
+                    <option value="">Selecione</option>
+                    <option value="0-50">R$0 - R$50</option>
+                    <option value="51-100">R$51 - R$100</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="discount-filter">DESCONTO</label>
+                <select id="discount-filter">
+                    <option value="">Selecione</option>
+                    <option value="10">10% ou mais</option>
+                    <option value="20">20% ou mais</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="products-grid">
+            <div class="product-card">
+                <img src="base.jpg" alt="Base Líquida HD" class="product-image">
+                <div class="product-details">
+                    <p class="product-name">Base Líquida HD</p>
+                    <p class="product-description">Alta cobertura 25 ml.</p>
+                    <p class="product-price">R$ 31.99</p>
+                </div>
+                <button class="add-to-cart" aria-label="Adicionar à sacola"><i class="fas fa-bag-shopping"></i></button>
+            </div>
+
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+            <div class="product-card placeholder"></div>
+        </section>
+    </main>
+
 </body>
 </html>
