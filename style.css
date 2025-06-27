@@ -4,28 +4,39 @@ body {
 
 header{
     background-color: #ffe4dc;
+    width: 100%;
 }
 
 #logo{
    width: 10%;
 }
 
-ul{
-    display: flex;
+.informacao{
     text-align: left;
-    margin: 20px 10px 10px;
-
-}
-a{
-    margin-left: 160px;
-    color: black;
     display: flex;
-    text-decoration: none;
+    gap: 40px;
+    font-size: 20px;
+    background: #d8a585;
     font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-	font-weight: bold;
-	font-size: 22px;
+    padding: 0 90px;
+
 }
 
 
+a{
+    margin: 0 40px;
+    background-color: #d8a585;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+#pdtbase{
+    margin:0 20em;
+}
+
+#pdtblush{
+    margin:0 60em;
+}
 
